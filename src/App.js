@@ -7,10 +7,12 @@ class App extends Component {
 
   state={
       todos:[
-        {id:1, content:'learn Java'},
-        {id:2, content:'learn JavaScript'},
-        {id:3, content:'learn Python'},
-        {id:4, content:'learn Spring'}
+        {id:1, content:'Learn Java'},
+        {id:2, content:'Learn JavaScript'},
+        {id:3, content:'Learn Python'},
+        {id:4, content:'Learn Spring'},
+        {id:5, content:'Learn Spring Boot'}
+
       ]
   }
 
@@ -35,7 +37,7 @@ class App extends Component {
   render(){
     return (
       <div className="todo-app container">
-        <h1 className="center blue-text">List of Todo's</h1>
+        <h2 className="center blue-text">List of Todo's</h2>
         <Todos todos={this.state.todos} deleteTodo= {this.deleteTodo}></Todos>
         <AddTodo addTodo={this.addTodo}/>
       </div>
